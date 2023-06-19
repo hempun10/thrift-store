@@ -1,0 +1,7 @@
+.img_content {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img_content.hovered {
+  transform: translateX(10%) scale(1.05);
+}

@@ -1,0 +1,58 @@
+:root {
+  --arrow-color: #000000;
+  --arrow-background: #ffffff;
+  --arrow-hover-background: #000000;
+  --arrow-hover-color: #ffffff;
+  --arrow-disabled-color: #cccccc;
+}
+/* Styling for the arrow container */
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--arrow-background);
+  color: var(--arrow-color);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Styling for the arrow icon  */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--arrow-color);
+  border-right: 2px solid var(--arrow-color);
+  transform: rotate(-132.5deg);
+  transition: all 0.3s ease;
+}
+.swiper-button-next::after {
+  transform: rotate(45deg);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--arrow-hover-background);
+}
+
+/* Styling for the arrow hover state */
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  border-color: var(--arrow-hover-color);
+  background-color: transparent;
+}
+/* Styling for the arrow active state */
+.swiper-button-next.swiper-button-disabled::after,
+.swiper-button-prev.swiper-button-disabled::after {
+  border-color: var(--arrow-disabled-color);
+  opacity: 0.5;
+}

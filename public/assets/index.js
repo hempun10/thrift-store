@@ -1,0 +1,16 @@
+export { default as Logo } from './logo.png'
+export { default as HeroImg1 } from './hero_img_1.png'
+export { default as HeroImg2 } from './hero_img_2.png'
+export { default as HeroImg3 } from './hero_img_3.png'
+export { default as HeroImg4 } from './hero_img_4.png'
+// export { default as Favicon } from './favicon.png'
+export { default as Clothing } from './clothing_cate.jpg'
+export { default as Accessories } from './accesories_cat.jpg'
+export { default as Bag } from './bag_cat.jpg'
+export { default as MakeUp } from './mkeup_cat.jpeg'
+export { default as Shoes } from './sandles_cat.jpg'
+export { default as Img_placeholder } from './placeholder_img.webp'
+export { default as CTA_IMG } from './cta.webp'
+export { default as Gradient_BG } from './background_gradinet.png'
+
+
