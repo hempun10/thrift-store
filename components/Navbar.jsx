@@ -24,10 +24,19 @@ const LinkTag = () => (
     <Link href={"/"}>
       <CustomLink content="Home" />
     </Link>
-    <CustomLink content="Shop" />
-    <CustomLink content="Product" />
-    <CustomLink content="Blog" />
-    <CustomLink content="Contact" />
+
+    <Link href={"/shop"}>
+      <CustomLink content="Shop" />
+    </Link>
+    <Link href={"/product"}>
+      <CustomLink content="Product" />
+    </Link>
+    <Link href={"/blog"}>
+      <CustomLink content="Blog" />
+    </Link>
+    <Link href={"/contact"}>
+      <CustomLink content="Contact" />
+    </Link>
   </div>
 );
 

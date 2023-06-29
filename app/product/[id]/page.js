@@ -1,10 +1,11 @@
 "use client";
+import '@/styles/Slider.css'
 import React, { useState, useEffect } from "react";
 import ProductSlider from "@/components/ProductSlider";
 import ProductDetail from "@/components/ProductDetail";
 import ProductCarousel from "@/components/ProductCarousel";
 import HeadingComp from "@/components/HeadingComp";
-import Loader from "@/components/loader";
+import Loader from "@/components/Loader";
 import { fetchProduct } from "@/lib/FetchData";
 
 const ProductDetailPage = ({ params: { id } }) => {
